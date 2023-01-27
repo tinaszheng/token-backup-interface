@@ -70,13 +70,13 @@ export default function Rescue() {
     return <RecoveryContainer />
   }
 
-  // if (!recoveryData.squad.includes(address)) {
-  //   return (
-  //     <RecoveryContainer>
-  //       <div style={{ padding: '48px', fontSize: '32px' }}>Please connect as a valid squad member.</div>
-  //     </RecoveryContainer>
-  //   )
-  // }
+  if (!recoveryData.squad.includes(address)) {
+    return (
+      <RecoveryContainer>
+        <div style={{ padding: '48px', fontSize: '32px' }}>Please connect as a valid squad member.</div>
+      </RecoveryContainer>
+    )
+  }
 
   return (
     <RecoveryContainer>
